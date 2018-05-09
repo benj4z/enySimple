@@ -1,0 +1,13 @@
+<svg width="28" height="28" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group 8">
+<g id="Rectangle 2">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 19.5 8.5L 8.5 8.5L 8.5 19.5L 19.5 19.5L 19.5 8.5Z" stroke-width="17" stroke-miterlimit="8" stroke="#EEEEEE"/>
+</g>
+<g id="Line">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 1.42816 0.161283L 8.64503 5.14421C 9.05893 5.42999 9.16279 5.99719 8.87701 6.41109C 8.81436 6.50183 8.73576 6.58043 8.64503 6.64308L 1.42816 11.626C 1.01427 11.9118 0.447063 11.8079 0.161283 11.394C 0.056253 11.2419 0 11.0614 0 10.8766L 0 0.910715C 0 0.407741 0.407741 0 0.910715 0C 1.09557 0 1.27605 0.056253 1.42816 0.161283Z" transform="translate(10 8)" fill="#1B1B1B"/>
+</g>
+</g>
+</g>
+</svg>
+

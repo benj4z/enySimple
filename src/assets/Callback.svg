@@ -1,0 +1,59 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Callback</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1015 342)">
+<g id="Callback">
+<g id="Rectangle">
+<mask id="mask0_outline_out">
+<rect id="mask0_outline_inv" fill="white" x="-1" y="-1" width="20" height="30" transform="translate(1030 -332)"/>
+<use xlink:href="#path0_fill" fill="black" transform="translate(1030 -332)"/>
+</mask>
+<g mask="url(#mask0_outline_out)">
+<use xlink:href="#path1_stroke_2x" transform="translate(1030 -332)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group 10">
+<g id="Line 3 Copy">
+<use xlink:href="#path2_stroke" transform="matrix(-1 0 0 -1 1043 -320)" fill="#FFFFFF"/>
+</g>
+<g id="Path 2">
+<use xlink:href="#path3_stroke" transform="translate(1041.99 -328.013)" fill="#FFFFFF"/>
+</g>
+<g id="Path 2 Copy">
+<use xlink:href="#path3_stroke" transform="matrix(1 0 0 -1 1042 -323.986)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Group 10 Copy 2">
+<g id="Line 3 Copy">
+<use xlink:href="#path2_stroke" transform="translate(1035 -320)" fill="#FFFFFF"/>
+</g>
+<g id="Path 2">
+<use xlink:href="#path3_stroke" transform="matrix(-1 0 0 -1 1036.01 -311.987)" fill="#FFFFFF"/>
+</g>
+<g id="Path 2 Copy">
+<use xlink:href="#path3_stroke" transform="matrix(-1 0 -0 1 1036 -316.014)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Rectangle 8">
+<use xlink:href="#path4_fill" transform="translate(1038 -309)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 2" opacity="0.01">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path5_fill" fill="white" transform="translate(1015 -342)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path6_stroke_2x" transform="translate(1015 -342)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 18 0L 18 28L 0 28L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -1L -1 0L 0 0ZM 18 0L 19 0L 18 -1L 18 0ZM 18 28L 18 29L 19 28L 18 28ZM 0 28L -1 28L 0 29L 0 28ZM 0 1L 18 1L 18 -1L 0 -1L 0 1ZM 17 0L 17 28L 19 28L 19 0L 17 0ZM 18 27L 0 27L 0 29L 18 29L 18 27ZM 1 28L 1 0L -1 0L -1 28L 1 28Z"/>
+<path id="path2_stroke" d="M 7 -0.5L 6.5 -0.5L 6.5 0.5L 7 0.5L 7 -0.5ZM 9 0L 9.5 0L 9.5 -0.5L 9 -0.5L 9 0ZM 9 4L 9.35355 4.35355L 9.5 4.20711L 9.5 4L 9 4ZM 7 6L 7 6.5L 7.20711 6.5L 7.35355 6.35355L 7 6ZM 0 5.5L -0.5 5.5L -0.5 6.5L 0 6.5L 0 5.5ZM 7 0.5L 9 0.5L 9 -0.5L 7 -0.5L 7 0.5ZM 8.5 0L 8.5 4L 9.5 4L 9.5 0L 8.5 0ZM 8.64645 3.64645L 6.64645 5.64645L 7.35355 6.35355L 9.35355 4.35355L 8.64645 3.64645ZM 7 5.5L 0 5.5L 0 6.5L 7 6.5L 7 5.5Z"/>
+<path id="path3_stroke" d="M 1.65995 2.36706L 2.01351 2.72061L 2.72061 2.01351L 2.36706 1.65995L 1.65995 2.36706ZM 0.353553 -0.353553L 0 -0.707107L -0.707107 0L -0.353553 0.353553L 0.353553 -0.353553ZM 2.36706 1.65995L 0.353553 -0.353553L -0.353553 0.353553L 1.65995 2.36706L 2.36706 1.65995Z"/>
+<path id="path4_fill" fill-rule="evenodd" d="M 0 0L 2 0L 2 2L 0 2L 0 0Z"/>
+<path id="path5_fill" fill-rule="evenodd" d="M 0 0.999999C 0 0.447714 0.447715 0 1 0L 47 0C 47.5523 0 48 0.447715 48 1L 48 47C 48 47.5523 47.5523 48 47 48L 0.999999 48C 0.447714 48 0 47.5523 0 47L 0 0.999999Z"/>
+<path id="path6_stroke_2x" d="M 1 1L 47 1L 47 -1L 1 -1L 1 1ZM 47 1L 47 47L 49 47L 49 1L 47 1ZM 47 47L 0.999999 47L 0.999999 49L 47 49L 47 47ZM 1 47L 1 0.999999L -1 0.999999L -1 47L 1 47ZM 0.999999 47L 1 47L -1 47C -1 48.1046 -0.104572 49 0.999999 49L 0.999999 47ZM 47 47L 47 49C 48.1046 49 49 48.1046 49 47L 47 47ZM 47 1L 49 1C 49 -0.104568 48.1046 -1 47 -1L 47 1ZM 1 -1C -0.104568 -1 -1 -0.104572 -1 0.999999L 1 0.999999L 1 1L 1 -1Z"/>
+</defs>
+</svg>
