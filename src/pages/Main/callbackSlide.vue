@@ -30,7 +30,7 @@ export default {
 <style scoped>
     .slideContent {
         background-color: #000;
-        background-image: url(../../assets/circle.png);
+        background-image: url(../../../public/circle.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;

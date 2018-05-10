@@ -73,7 +73,7 @@ export default {
 
     .slideContent {
         background-color: #000;
-        background-image: url(../../assets/ktmpBg.png);
+        background-image: url(../../../public/ktmpBg.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;

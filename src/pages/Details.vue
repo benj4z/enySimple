@@ -3,6 +3,7 @@
     name="details"
     mode="out-in"
     appear
+    v-bind:css="false"
     v-on:enter="startAnimate"
     v-on:before-enter="beforeAnimate"
     v-on:leave="leaveAnimate" >
@@ -11,25 +12,25 @@
             <settings />
         </modal>
         <modal v-show="points.p1" @close="close">
-            <point-modal />
+            <point-modal :content="content"/>
         </modal>
         <modal v-show="points.p2" @close="close">
-            <point-modal />
+            <point-modal :content="content"/>
         </modal>
         <modal v-show="points.p3" @close="close">
-            <point-modal />
+            <point-modal :content="content"/>
         </modal>
         <modal v-show="points.p4" @close="close">
-            <point-modal />
+            <point-modal :content="content"/>
         </modal>
         <modal v-show="points.p5" @close="close">
-            <point-modal />
+            <point-modal :content="content"/>
         </modal>
         <modal v-show="points.p6" @close="close">
-            <point-modal />
+            <point-modal :content="content"/>
         </modal>
         <modal v-show="points.p7" @close="close">
-            <point-modal />
+            <point-modal :content="content"/>
         </modal>
         <div class="drag-container">
           <div class="drag" v-drag>
@@ -129,17 +130,22 @@
         <button type="button" @click="backToMain" class="close">
           Назад
         </button>
+        <div class="rightText">
+          Раскрой (технологический процесс разрезания листов на отдельные детали или заготовки) может производиться двумя порталами одновременно, так же позволяет выполнять разделку кромок различной конфигурации листового металлопроката под сварку, типа А, V, Y
+        </div>
     </div>
   </transition>
 </template>
 
 <script>
 import Vue from 'vue';
+import axios from 'axios';
 import vueDrag from 'vue-dragging';
 import Modal from '../components/modal/modal.vue';
 import Settings from '../components/settings/settings.vue';
 import Point from '../components/point/point.vue';
 import PointModal from '../components/pointModal/pointModal.vue';
+
 
 Vue.use(vueDrag);
 
@@ -150,6 +156,7 @@ export default {
     Settings,
     Point,
     PointModal,
+    axios,
   },
   data() {
     return {
@@ -163,6 +170,7 @@ export default {
         p6: false,
         p7: false,
       },
+      content: '',
     };
   },
   created() {
@@ -186,8 +194,20 @@ export default {
       const { point } = event.currentTarget.dataset;
 
       this.points[point] = true;
+
+      this.uploadModalData(point)
+
     },
-    /* eslint-disable */
+    uploadModalData(point){
+      const data_src = `src/data/details/${point}.json`;
+
+      axios.get(data_src).
+      then(response => {
+        this.content = response.data;
+      }).catch(error => {
+        console.log(error);
+      });
+    },
     showHighlight(event) {
       const { point } = event.currentTarget.dataset;
 
@@ -232,7 +252,7 @@ export default {
 <style lang="scss" scoped>
     .container {
         background-color: #000;
-        background-image: url(../assets/ktmpBg.png);
+        background-image: url(../../public/ktmpBg.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
@@ -241,7 +261,7 @@ export default {
 
         &.offScreen {
           .product-img {
-            transform: scale(0.78);
+            transform: scale(0.72);
           }
 
           .point {
@@ -322,6 +342,19 @@ export default {
         width: auto;
         pointer-events: none;
         transition: all .45s;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .rightText {
+      position: absolute;
+      bottom: 7%;
+      right: 3%;
+      color: #fff;
+      width: 400px;
+      line-height: 20px;
     }
 
     .tag {
