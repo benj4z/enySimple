@@ -473,4 +473,13 @@ export default {
         transform: rotate(-45deg);
       }
     }
+
+    @media screen and (max-width: 1367px) {
+
+      .content {
+        height: 65%;
+      }
+
+
+    }
 </style>

@@ -127,4 +127,18 @@ export default {
             margin: 0;
         }
     }
+
+
+    @media screen and (max-width: 1367px) {
+
+        header {
+            .headerItem {
+                width: 30%;
+
+                &:last-child {
+                    width: 40%;
+                }
+            }   
+        }
+    }
 </style>

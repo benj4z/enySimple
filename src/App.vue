@@ -90,7 +90,7 @@ body {
     text-transform: uppercase;
     font-family: arame;
     letter-spacing: 3px;
-    font-size: 10px;
+    font-size: 6px;
     left: auto!important;
     right: 25px;
     top: 1px!important;
@@ -102,6 +102,7 @@ body {
     background: transparent;
     border: 1px solid #fff;
     margin: -2px 0 0 -4px;
+    font-size: 12px;
 }
 
 #fp-nav ul li {
@@ -135,6 +136,7 @@ body {
         align-items: center;
         justify-content: center;
         list-style: none;
+        z-index: 2;
     }
 
     .tabs-component-tab {

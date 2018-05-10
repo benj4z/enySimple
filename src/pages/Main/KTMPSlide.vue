@@ -113,6 +113,7 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
         transition: all .35s;
+        z-index: -1;
     }
 
     .bottom-controls {
