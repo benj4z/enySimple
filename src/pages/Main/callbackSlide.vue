@@ -12,6 +12,10 @@
                     <input type="submit" class="submit">
                 </form>
             </div>
+            <div class="callback-success">
+              <h2 class="title">Спасибо!</h2>
+              <p>Мы обязательно свяжемся с вами.</p>
+            </div>
         </div>
     </div>
 </template>
@@ -65,9 +69,10 @@ export default {
     }
 
     .title {
-        font-size: 2.7vw;
-        font-family: arame;
         margin-top: 0;
+        font-size: 4.5vw;
+        font-weight: 400;
+        font-family: arame;
         margin-bottom: 120px;
     }
 
@@ -80,12 +85,18 @@ export default {
         background-color: transparent;
         border: 0;
         border-bottom: 1px solid #fff;
-        margin-bottom: 30px;
+        margin-bottom: 55px;
         padding: 12px 10px;
         text-transform: uppercase;
         font-size: 22px;
         font-weight: 600;
         letter-spacing: 3px;
+        outline: none;
+        color: #fff;
+    }
+
+    .callback-success {
+      display: none;
     }
 
     .submit {

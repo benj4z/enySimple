@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
     .switcherContent {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -37,7 +37,7 @@ export default {
 
     .linkItem {
         font-family: arame;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         letter-spacing: 3px;
         text-transform: uppercase;

@@ -44,6 +44,9 @@
                 @click="pointOpen"
               >
                 <point />
+                <span class="point-text">
+                  Плазменная технологическая оснастка семейства Powermax, Maxpro 200, HyPerfomance HPR XPR.
+                </span>
               </button>
               <button
                 type="button"
@@ -53,6 +56,9 @@
                 @mouseleave="hideHighlight"
                 @click="pointOpen">
                 <point />
+                <span class="point-text">
+                  Система числового программного управления Hypertherm EDGE Connect.
+                </span>
               </button>
               <button
                 type="button"
@@ -62,6 +68,9 @@
                 @mouseleave="hideHighlight"
                 @click="pointOpen">
                 <point />
+                <span class="point-text">
+                  Портал с приводами перемещения
+                </span>
               </button>
               <button
                 type="button"
@@ -71,6 +80,9 @@
                 @mouseleave="hideHighlight"
                 @click="pointOpen">
                 <point />
+                <span class="point-text">
+                  Газокислородная технологическая оснастка
+                </span>
               </button>
               <button
                 type="button"
@@ -80,6 +92,9 @@
                 @mouseleave="hideHighlight"
                 @click="pointOpen">
                 <point />
+                <span class="point-text">
+                  Путь рельсовый
+                </span>
               </button>
               <button
                 type="button"
@@ -89,6 +104,9 @@
                 @mouseleave="hideHighlight"
                 @click="pointOpen">
                 <point />
+                <span class="point-text">
+                  Рабочий стол вытяжной секционный с самоочищающимся фильтром.
+                </span>
               </button>
               <button
                 type="button"
@@ -173,8 +191,8 @@ export default {
       content: '',
     };
   },
-  created() {
-
+  updated() {
+    console.log(this.content);
   },
   methods: {
     close() {
@@ -186,6 +204,7 @@ export default {
       this.points.p5 = false;
       this.points.p6 = false;
       this.points.p7 = false;
+      this.content = '';
     },
     settingsOpen() {
       this.settings = true;
@@ -195,15 +214,18 @@ export default {
 
       this.points[point] = true;
 
-      this.uploadModalData(point)
+      const callback = () => this.points[point] = true;
+
+      this.uploadModalData(point, callback)
 
     },
-    uploadModalData(point){
+    uploadModalData(point, callback){
       const data_src = `src/data/details/${point}.json`;
 
       axios.get(data_src).
       then(response => {
         this.content = response.data;
+        callback();
       }).catch(error => {
         console.log(error);
       });
@@ -212,12 +234,14 @@ export default {
       const { point } = event.currentTarget.dataset;
 
       $(`.highlight[data-highlight=${point}]`).fadeIn(300);
+      $(`.${point}`).find('.point-text').fadeIn(300);
     },
 
     hideHighlight(event) {
       const { point } = event.currentTarget.dataset;
 
       $(`.highlight[data-highlight=${point}]`).fadeOut(300);
+      $(`.${point}`).find('.point-text').fadeOut(300);
     },
 
     startAnimate(el, done) {
@@ -418,6 +442,20 @@ export default {
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    .point-text {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #fff;
+      position: absolute;
+      font-weight: 600;
+      width: 220px;
+      left: 100%;
+      top: 50%;
+      text-align: left;
+      line-height: 18px;
+      display: none;
     }
 
     .point {

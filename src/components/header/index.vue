@@ -9,7 +9,7 @@
        <header class="offScreen">
             <div class="headerItem">
                 <router-link to="/">
-                    <img src="src/assets/logo.svg" alt="Logo"/>
+                    <img src="src/assets/logo.svg" alt="Logo" class="logo"/>
                 </router-link>
                 <SwitcherComponent />
             </div>
@@ -102,6 +102,10 @@ export default {
         }
     }
 
+    .logo {
+      width: 100px;
+    }
+
     .headerLink {
         color: #fff;
         text-decoration: none;
@@ -113,6 +117,7 @@ export default {
         border: 0;
         cursor: pointer;
         transition: all 0.35s;
+        font-size: 13px;
 
         &:hover {
             opacity: 1;
@@ -138,7 +143,7 @@ export default {
                 &:last-child {
                     width: 40%;
                 }
-            }   
+            }
         }
     }
 </style>

@@ -93,30 +93,36 @@ body {
     font-size: 6px;
     left: auto!important;
     right: 25px;
-    top: 1px!important;
+    top: 2px!important;
 }
 
 #fp-nav ul li a span {
-    height: 8px;
-    width: 8px;
+    height: 6px;
+    width: 6px;
     background: transparent;
     border: 1px solid #fff;
-    margin: -2px 0 0 -4px;
     font-size: 12px;
+    transform: translate(-50%, -50%);
+    margin: 0!important;
+}
+
+#fp-nav ul li:hover a span {
+  width: 10px;
+  height: 10px;
 }
 
 #fp-nav ul li {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 #fp-nav ul li a.active span:before,
-#fp-nav ul li:hover a.active span:before,
+#fp-nav ul li:hover a span:before,
 .fp-slidesNav ul li a.active span:before,
-.fp-slidesNav ul li:hover a.active span:before {
+.fp-slidesNav ul li:hover a span:before {
     content: '';
     position: absolute;
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     background-color: #fff;
     border-radius: 50%;
     top: 50%;
@@ -166,9 +172,9 @@ body {
             font-size: 18px;
             text-transform: uppercase;
             opacity: 0.5;
-            font-weight: 600;
+            font-weight: 400;
             font-family: arame;
-            letter-spacing: 3px;
+            letter-spacing: 5px;
             position: relative;
         }
     }
@@ -193,15 +199,17 @@ body {
 
     .about {
         .fp-slidesNav.bottom {
-            left: 58%!important;
-            bottom: 10%;
+            left: 64.5%!important;
+            bottom: 12%;
 
             ul li {
-                width: 60px;
+                width: 55px;
+                vertical-align: middle;
+                margin: 7px 3px;
             }
 
             ul li a span {
-                width: 60px;
+                width: 55px;
                 height: 1px;
                 background-color: #fff;
                 opacity: 0.5;

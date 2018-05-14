@@ -55,7 +55,6 @@ export default {
 
     leaveAnimate(el, done) {
       $(this.$el).toggleClass('onScreen offScreen');
-      $()
       setTimeout(() => {
         done();
       }, 700);
@@ -125,11 +124,12 @@ export default {
         background-color: transparent;
         border: 0;
         text-transform: uppercase;
+        text-decoration: none;
         font-family: arame;
-        font-weight: 600;
-        letter-spacing: 3px;
+        font-weight: 400;
+        letter-spacing: 4px;
         color: #fff;
-        margin-right: 50px;
+        margin-right: 60px;
         cursor: pointer;
 
         &:last-child {

@@ -82,8 +82,8 @@ export default {
     }
 
     .text-block {
-        width: 48%;
-        margin-right: 70px;
+        width: 45%;
+        margin-right: 20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -92,8 +92,8 @@ export default {
     .title {
         margin-top: 0;
         margin-bottom: 70px;
-        font-size: 5.5vw;
-        font-weight: 800;
+        font-size: 4.5vw;
+        font-weight: 400;
         font-family: arame;
     }
 
@@ -108,7 +108,7 @@ export default {
 
     .youtube-text {
         letter-spacing: 3px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         opacity: 0.5;
     }
 

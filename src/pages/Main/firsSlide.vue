@@ -4,7 +4,7 @@
             <h1 class="title">Комплекс термической <br>резки «Енисей»</h1>
             <div class="about">
                 <div class="rotateTitle">О Ктрм</div>
-                <p class="text">{{text}}}</p>
+                <p class="text">{{text}}</p>
             </div>
         </div>
     </div>
@@ -27,11 +27,11 @@ export default {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 4vw;
+        font-size: 4.5vw;
         font-weight: 400;
         font-family: arame;
         margin: 0;
-        width: 50%;
+        width: 65%;
     }
 
     .slideContent {
@@ -52,7 +52,7 @@ export default {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 450px;
+        width: 402px;
         display: flex;
         justify-content: space-between;
     }
@@ -71,7 +71,7 @@ export default {
     .text {
         margin: 0;
         margin-left: 40px;
-        line-height: 27px;
+        line-height: 26px;
     }
 
 </style>

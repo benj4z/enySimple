@@ -1,26 +1,26 @@
 <template>
-    <div class="point-container" v-if="data && Object.keys(data).length">
+    <div class="point-container" v-if="content && Object.keys(content).length">
         <div class="background" :style="{backgroundImage: bg}"/>
         <vue-perfect-scrollbar v-once class="scroll-area">
             <div class="separator" />
             <div class="content">
                  <div class="content-header">
-                    <h2 class="title">{{data.title}}</h2>
+                    <h2 class="title">{{content.title}}</h2>
                      <div class="play-link">
                          <img src="src/assets/play.svg" alt="">
                          <span>видео</span>
                      </div>
                  </div>
                 <div class="content-body">
-                    <div class="article" v-for="item in data.content">
+                    <div class="article" v-for="item in content.content">
                       <h2 class="subtitle">{{item.title}}</h2>
                       <p v-for="text in item.texts">
                         {{text}}
                       </p>
                     </div>
                     <!--<div class="more">
-                      <span class="moreTitle">{{data.more.title}}</span>
-                      <a :href="data.more.site" target="_blank">{{data.more.site}}</a>
+                      <span class="moreTitle">{{content.more.title}}</span>
+                      <a :href="data.more.site" target="_blank">{{content.more.site}}</a>
                     </div>-->
                 </div>
             </div>
@@ -41,11 +41,6 @@ export default {
     return {
       bg: 'url(src/assets/point1.jpg)',
     };
-  },
-  computed: {
-    data() {
-      return this.content;
-    }
   }
 };
 </script>

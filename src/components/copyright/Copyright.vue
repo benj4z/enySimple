@@ -46,10 +46,12 @@ export default {
         left: 0;
         z-index: 2;
         color: #fff;
+        opacity: 0.5;
+        font-size: 12px;
         transition: all .35s;
 
         &.onScreen {
-            opacity: 1;
+            opacity: 0.5;
             transform: translateX(0%) rotate(-90deg);
         }
 
