@@ -71,7 +71,7 @@ export default {
     .text {
         margin: 0;
         margin-left: 40px;
-        line-height: 26px;
+        line-height: 24px;
     }
 
 </style>

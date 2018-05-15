@@ -98,7 +98,7 @@ export default {
     }
 
     .text {
-        line-height: 22px;
+        line-height: 24px;
         letter-spacing: 2px;
     }
 

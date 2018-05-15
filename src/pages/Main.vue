@@ -14,6 +14,12 @@
                 <callback-slide />
             </div>
         </full-page>
+        <button class="ctrlBtn down" type="button" @click="moveDown">
+          <img src="src/assets/LineDown.svg" alt="">
+        </button>
+        <button class="ctrlBtn up" type="button" @click="moveUp">
+          <img src="src/assets/LineUp.svg" alt="">
+        </button>
     </div>
 </template>
 
@@ -38,6 +44,14 @@ export default {
       },
     };
   },
+  methods: {
+    moveDown() {
+      $.fn.fullpage.moveSectionDown();
+    },
+    moveUp() {
+      $.fn.fullpage.moveSectionUp();
+    }
+  },
   beforeDestroy () {
     console.log(1);
     $.fn.fullpage.destroy('all');
@@ -61,5 +75,29 @@ export default {
     .section {
         color: #fff;
         position: relative;
+    }
+
+    .ctrlBtn {
+      position: absolute;
+      top: calc(50% + 95px);
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      outline: none;
+      opacity: 0.7;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.down {
+        left: 3%;
+      }
+
+      &.up {
+        top: calc(50% + 94px);
+        left: calc(3% + 45px);
+      }
     }
 </style>

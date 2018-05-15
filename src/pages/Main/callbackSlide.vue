@@ -78,7 +78,8 @@ export default {
 
     .text {
         letter-spacing: 3px;
-        line-height: 20px;
+        line-height: 24px;
+        width: 85%;
     }
 
     .input {

@@ -12,25 +12,25 @@
             <settings />
         </modal>
         <modal v-show="points.p1" @close="close">
-            <point-modal :content="content"/>
+            <point-modal :content="content" :key="content.updated"/>
         </modal>
         <modal v-show="points.p2" @close="close">
-            <point-modal :content="content"/>
+            <point-modal :content="content" :key="content.updated"/>
         </modal>
         <modal v-show="points.p3" @close="close">
-            <point-modal :content="content"/>
+            <point-modal :content="content" :key="content.updated"/>
         </modal>
         <modal v-show="points.p4" @close="close">
-            <point-modal :content="content"/>
+            <point-modal :content="content" :key="content.updated"/>
         </modal>
         <modal v-show="points.p5" @close="close">
-            <point-modal :content="content"/>
+            <point-modal :content="content" :key="content.updated"/>
         </modal>
         <modal v-show="points.p6" @close="close">
-            <point-modal :content="content"/>
+            <point-modal :content="content" :key="content.updated"/>
         </modal>
         <modal v-show="points.p7" @close="close">
-            <point-modal :content="content"/>
+            <point-modal :content="content" :key="content.updated"/>
         </modal>
         <div class="drag-container">
           <div class="drag" v-drag>

@@ -13,7 +13,7 @@
                       <img class="product-img" src="src/assets/source.png" alt="Енисей 2М">
                       <div class="bottom-controls">
                           <router-link to="/complexes/eni2m" class="btnControls">
-                              подробнее
+                            подробнее
                           </router-link>
                           <button class="btnControls">Видео</button>
                           <button class="btnControls">Фото</button>
@@ -130,6 +130,7 @@ export default {
         letter-spacing: 4px;
         color: #fff;
         margin-right: 60px;
+        font-size: 12px;
         cursor: pointer;
 
         &:last-child {
