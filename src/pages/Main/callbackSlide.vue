@@ -34,7 +34,7 @@ export default {
 <style scoped>
     .slideContent {
         background-color: #000;
-        background-image: url(../../../public/circle.png);
+        background-image: url(/../public/circle.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
@@ -78,8 +78,7 @@ export default {
 
     .text {
         letter-spacing: 3px;
-        line-height: 24px;
-        width: 85%;
+        line-height: 20px;
     }
 
     .input {
