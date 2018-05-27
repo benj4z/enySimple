@@ -1,5 +1,5 @@
 <template>
-    <div class="slideContent">
+    <div class="slideContent offScreen">
         <div class="content">
             <div class="callback">
                 <div class="text-block">
@@ -9,7 +9,7 @@
                 <form class="callbackForm">
                     <input type="text" class="input" placeholder="Имя">
                     <input type="text" class="input" placeholder="Телефон/эл.почта">
-                    <input type="submit" class="submit">
+                    <a href="#" class="anim-link"><input type="submit" class="submit"></a>
                 </form>
             </div>
             <div class="callback-success">
@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .slideContent {
         background-color: #000;
         background-image: url(./circle.png);
@@ -39,6 +39,40 @@ export default {
         background-size: contain;
         background-position: center center;
         position: relative;
+
+        &.offScreen {
+          .title {
+            opacity: 0;
+            transform: translateY(-25%);
+          }
+
+          .text-block {
+            opacity: 0;
+            transform: translateX(-25%);
+          }
+
+          .callbackForm {
+            opacity: 0;
+            transform: translateX(25%);
+          }
+        }
+
+        &.onScreen {
+          .title {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          .text-block {
+            opacity: 1;
+            transform: translateX(0);
+          }
+
+          .callbackForm {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
     }
 
     .content {
@@ -60,12 +94,14 @@ export default {
 
     .text-block {
         width: 45%;
+        transition: all .35s;
     }
 
     .callbackForm {
         width: 45%;
         display: flex;
         flex-direction: column;
+        transition: all .35s;
     }
 
     .title {
@@ -74,6 +110,7 @@ export default {
         font-weight: 400;
         font-family: arame;
         margin-bottom: 120px;
+        transition: all .35s;
     }
 
     .text {
@@ -99,6 +136,10 @@ export default {
       display: none;
     }
 
+    .anim-link {
+      align-self: flex-start;
+    }
+
     .submit {
         margin-top: 20px;
         background-color: transparent;
@@ -107,7 +148,8 @@ export default {
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 3px;
-        width: 200px;
+        width: auto;
         text-align: left;
+        cursor: pointer;
     }
 </style>

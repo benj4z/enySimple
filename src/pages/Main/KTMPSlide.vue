@@ -8,28 +8,32 @@
     v-on:leave="leaveAnimate" >
       <div class="slideContent offScreen">
           <div class="content">
-              <tabs :options={options}>
-                  <tab name="Енисей 2М">
-                      <img class="product-img" src="src/assets/source.png" alt="Енисей 2М">
-                      <div class="bottom-controls">
-                          <router-link to="/complexes/eni2m" class="btnControls">
-                              подробнее
-                          </router-link>
-                          <button class="btnControls">Видео</button>
-                          <button class="btnControls">Фото</button>
-                      </div>
-                  </tab>
-                  <tab name="Енисей 3D">
-                      <img class="product-img" src="src/assets/Eni3D.png" alt="Енисей 2М">
-                      <div class="bottom-controls">
-                          <router-link to="/complexes/eni3d" class="btnControls">
-                              подробнее
-                          </router-link>
-                          <button class="btnControls">Видео</button>
-                          <button class="btnControls">Фото</button>
-                      </div>
-                  </tab>
-              </tabs>
+            <div class="topControls tabs-component-tab">
+              <a href="#" class="anim-link is-active" data-anchor="slide1" @click.prevent="moveLeft">Енисей 2М</a>
+              <a href="#" class="anim-link" data-anchor="slide2" @click.prevent="moveRight">Енисей 3D</a>
+            </div>
+            <div class="slideContainer">
+              <div class="slide" data-anchor="slide1">
+                <img class="product-img" src="src/assets/source.png" alt="Енисей 2М">
+                <div class="bottom-controls">
+                  <router-link to="/complexes/eni2m" class="btnControls anim-link">
+                    подробнее
+                  </router-link>
+                  <button class="btnControls anim-link">Видео</button>
+                  <button class="btnControls anim-link">Фото</button>
+                </div>
+              </div>
+              <div class="slide" data-anchor="slide2">
+                <img class="product-img" src="src/assets/Eni3D.png" alt="Енисей 2М">
+                <div class="bottom-controls">
+                  <router-link to="/complexes/eni3d" class="btnControls anim-link">
+                    подробнее
+                  </router-link>
+                  <button class="btnControls anim-link">Видео</button>
+                  <button class="btnControls anim-link">Фото</button>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
   </transition>
@@ -64,6 +68,18 @@ export default {
       $(this.$el).removeClass('onScreen');
       $(this.$el).removeClass('onScreen');
     },
+
+    moveLeft() {
+      $.fn.fullpage.moveSlideLeft();
+      $('.topControls a').removeClass('is-active');
+      $('.topControls a').first().addClass('is-active');
+    },
+
+    moveRight() {
+      $.fn.fullpage.moveSlideRight();
+      $('.topControls a').removeClass('is-active');
+      $('.topControls a').last().addClass('is-active');
+    }
   }
 };
 </script>
@@ -96,7 +112,7 @@ export default {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 70%;
+        width: 100%;
         height: 85%;
     }
 
@@ -105,19 +121,36 @@ export default {
         height: 100%;
     }
 
+    .topControls {
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    .slideContainer {
+      height: 100%;
+    }
+
     .product-img {
-        width: 100%;
+        width: 80%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         transition: all .35s;
         z-index: -1;
+        transform-origin: 0% 50%;
     }
 
     .bottom-controls {
         position: absolute;
-        bottom: 0;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .btnControls {
@@ -135,9 +168,6 @@ export default {
         &:last-child {
             margin-right: 0;
         }
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
+
 </style>

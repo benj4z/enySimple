@@ -4,7 +4,7 @@
             <div class="section">
                 <first-slide />
             </div>
-            <div class="section">
+            <div class="section ktmp">
                 <k-t-m-p-slide />
             </div>
             <div class="section about">
@@ -41,6 +41,14 @@ export default {
         showActiveTooltip: true,
         slidesNavigation: true,
         controlArrows: false,
+        afterLoad: () => {
+          setTimeout(() => {
+            $('.slideContent').removeClass('offScreen').addClass('onScreen');
+          }, 0)
+        },
+        onLeave: () => {
+          $('.slideContent').removeClass('onScreen').addClass('offScreen');
+        }
       },
     };
   },
@@ -92,7 +100,7 @@ export default {
       }
 
       &.down {
-        left: 3%;
+        left: 2.9%;
       }
 
       &.up {

@@ -1,5 +1,11 @@
 <template>
-    <div class="slideContent">
+  <transition
+    name="header"
+    mode="out-in"
+    v-on:enter="startAnimate"
+    v-on:before-enter="beforeAnimate"
+    v-on:leave="leaveAnimate" >
+    <div class="slideContent offScreen">
         <div class="content">
             <h1 class="title">Комплекс термической <br>резки «Енисей»</h1>
             <div class="about">
@@ -8,6 +14,7 @@
             </div>
         </div>
     </div>
+  </transition>
 </template>
 
 <script>
@@ -18,6 +25,26 @@ export default {
       text: 'Комплексы термической резки металлов «Енисей» предназначены для раскроя черного и цветного  листового металлов по контуру, запрограммированному в управляющей программе.',
     };
   },
+  methods: {
+    startAnimate(el, done) {
+      setTimeout(() => {
+        $(this.$el).toggleClass('onScreen offScreen');
+      }, 500);
+      done();
+    },
+
+    leaveAnimate(el, done) {
+      $(this.$el).toggleClass('onScreen offScreen');
+      setTimeout(() => {
+        done();
+      }, 700);
+    },
+
+    beforeAnimate() {
+      $(this.$el).removeClass('onScreen');
+      $(this.$el).removeClass('onScreen');
+    },
+  }
 };
 </script>
 
@@ -32,11 +59,36 @@ export default {
         font-family: arame;
         margin: 0;
         width: 65%;
+        transition: all .35s;
     }
 
     .slideContent {
         background-color: rgba(0, 0, 0, 0.15);
         position: relative;
+
+        &.offScreen {
+          .title {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+
+          .about {
+            transform: translateY(50%);
+            opacity: 0;
+          }
+        }
+
+        &.onScreen {
+          .title {
+            transform: translateY(-50%);
+            opacity: 1;
+          }
+
+          .about {
+            transform: translateY(0%);
+            opacity: 1;
+          }
+        }
     }
 
     .content {
@@ -55,6 +107,7 @@ export default {
         width: 402px;
         display: flex;
         justify-content: space-between;
+        transition: all .35s;
     }
 
     .rotateTitle {

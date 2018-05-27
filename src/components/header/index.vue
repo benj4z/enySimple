@@ -14,14 +14,14 @@
                 <SwitcherComponent />
             </div>
             <div class="headerItem">
-                <button
-                    type="button"
+                <a
+                    href="#"
                     data-modal="contacts"
-                    class="headerLink"
-                    @click="emit"
+                    class="headerLink anim-link"
+                    @click.prevent="emit"
                 >
                     Контакты
-                </button>
+                </a>
                 <a href="tel:+7 (391) 219-33-33" class="phone headerLink">
                     <p>+7 (391) 219-33-33</p>
                     <img src="src/assets/Callback.svg" alt="phone">

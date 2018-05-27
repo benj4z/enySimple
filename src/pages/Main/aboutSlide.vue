@@ -1,5 +1,5 @@
 <template>
-    <div class="slideContent">
+    <div class="slideContent offScreen">
         <div class="content about">
             <div class="text-block">
                 <h2 class="title">
@@ -58,6 +58,40 @@ export default {
         background-size: contain;
         background-position: center center;
         position: relative;
+
+        &.offScreen {
+          .title {
+            opacity: 0;
+            transform: translateY(-25%);
+          }
+
+          .youtube, .about-text {
+            opacity: 0;
+            transform: translateX(-25%);
+          }
+
+          .number-block {
+            opacity: 0;
+            transform: translateX(25%);
+          }
+        }
+
+        &.onScreen {
+          .title {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          .youtube, .about-text {
+            opacity: 1;
+            transform: translateX(0);
+          }
+
+          .number-block {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
     }
 
     .content {
@@ -74,6 +108,10 @@ export default {
             height: 100%;
             display: block;
         }
+    }
+
+    .about-text {
+      transition: all .35s;
     }
 
     .about {
@@ -95,6 +133,7 @@ export default {
         font-size: 4.5vw;
         font-weight: 400;
         font-family: arame;
+        transition: all .35s;
     }
 
     .text {
@@ -104,6 +143,7 @@ export default {
 
     .youtube {
         margin-bottom: 50px;
+        transition: all .35s;
     }
 
     .youtube-text {
@@ -122,6 +162,7 @@ export default {
     .number-block {
         width: 45%;
         margin-bottom: 100px;
+        transition: all .35s;
     }
 
     .slide, .number {

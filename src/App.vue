@@ -79,7 +79,7 @@ body {
      /* GLOBAL STYLES FOR NAVIGATOR */
 
 #fp-nav.left {
-    left: 5.5%;
+    left: 3%!important;
 }
 
 #fp-nav {
@@ -91,8 +91,7 @@ body {
     font-family: arame;
     letter-spacing: 3px;
     font-size: 6px;
-    left: auto!important;
-    right: 25px;
+    left: 40px!important;
     top: 2px!important;
 }
 
@@ -148,24 +147,6 @@ body {
     .tabs-component-tab {
         margin-right: 100px;
 
-        &:last-child {
-            margin-right: 0;
-        }
-
-        &.is-active {
-            a {
-                opacity: 1;
-                &:after {
-                    content: '';
-                    position: absolute;
-                    height: 100%;
-                    width: 1px;
-                    left: -15px;
-                    top: 0;
-                    background-color: #fff;
-                }
-            }
-        }
         a {
             color: #fff;
             text-decoration: none;
@@ -176,6 +157,19 @@ body {
             font-family: arame;
             letter-spacing: 5px;
             position: relative;
+            margin-right: 100px;
+
+            &.is-active {
+              opacity: 1;
+
+              &:after, &:before {
+                width: 50%;
+              }
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
         }
     }
 
@@ -227,6 +221,53 @@ body {
                 height: 2px;
             }
         }
+    }
+
+    .anim-link {
+      position: relative;
+      background-color: transparent;
+
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        width: 0;
+        height: 1px;
+        transition: all .35s;
+        background-color: #fff;
+      }
+
+      &:after {
+        left: 50%;
+      }
+
+      &:before {
+        right: 50%;
+      }
+
+      &:hover {
+        &:after, &:before {
+          width: 50%!important;
+        }
+      }
+
+    }
+
+    .ktmp {
+      .fp-slidesNav {
+        display: none!important;
+      }
+
+      .fp-section.fp-table, .fp-slide.fp-table {
+        height: 100%;
+        display: flex;
+      }
+
+      .fp-tableCell {
+        position: relative;
+        display: block;
+        height: 100% !important;
+      }
     }
 
 </style>
