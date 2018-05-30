@@ -36,14 +36,13 @@ export default {
     }
 
     .linkItem {
-        font-family: arame;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         text-transform: uppercase;
         text-decoration: none;
         color: #fff;
-        opacity: 0.5;
+        opacity: 0.6;
         transition: all 0.35s;
 
         &:hover {

@@ -141,7 +141,7 @@
             <img src="src/assets/play.svg" alt="play">
             <span>о комплексе</span>
           </button>
-          <button data-modal="settings" @click="settingsOpen" class="btnControls">
+          <button data-modal="settings" @click="settingsOpen" class="btnControls anim-link">
             характеристики
           </button>
         </div>
@@ -326,6 +326,7 @@ export default {
     }
 
     .titleBlock {
+        top: 38px;
         position: absolute;
         left: 20px;
     }
@@ -377,8 +378,10 @@ export default {
       bottom: 7%;
       right: 3%;
       color: #fff;
-      width: 400px;
-      line-height: 20px;
+      width: 430px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      font-weight: 600;
     }
 
     .tag {
@@ -386,13 +389,15 @@ export default {
         letter-spacing: 3px;
         opacity: 0.5;
         font-weight: 600;
+        font-size: 12px;
     }
 
     .title {
         font-family: arame;
         text-transform: uppercase;
-        font-weight: 600;
-        font-size: 2vw;
+        font-weight: 400;
+        font-size: 2.5vw;
+        letter-spacing: 4px;
     }
 
     .bottom-controls {
@@ -402,6 +407,9 @@ export default {
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .play-link {
@@ -414,6 +422,7 @@ export default {
         font-weight: 600;
         margin-bottom: 10px;
         cursor: pointer;
+        letter-spacing: 3px;
 
         img {
             margin-right: 20px;
@@ -428,19 +437,16 @@ export default {
         background-color: transparent;
         border: 0;
         text-transform: uppercase;
-        font-family: arame;
         font-weight: 600;
-        letter-spacing: 3px;
+        letter-spacing: 6px;
+        font-size: 24px;
+        opacity: 0.6;
         color: #fff;
         margin-right: 50px;
         cursor: pointer;
 
         &:last-child {
             margin-right: 0;
-        }
-
-        &:hover {
-            text-decoration: underline;
         }
     }
 
@@ -526,7 +532,7 @@ export default {
 
       &:after, &:before {
         content: '';
-        width: 31px;
+        width: 15px;
         height: 2px;
         background-color: #fff;
         position: absolute;
@@ -534,14 +540,14 @@ export default {
 
       &:after {
         top: 7px;
-        left: -33%;
+        left: -46%;
         transform: rotate(45deg);
       }
 
       &:before {
         top: 7px;
         left: -33%;
-        transform: rotate(-45deg);
+        transform: rotate(-50deg);
       }
     }
 

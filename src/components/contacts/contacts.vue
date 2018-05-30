@@ -37,13 +37,13 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 70%;
-        height: 80%;
+        height: 70%;
         color: #fff;
     }
 
     .title {
         font-family: arame;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 5vw;
         margin-top: 0;
         margin-bottom: 18%;
@@ -61,17 +61,19 @@ export default {
 
     .subTitle {
         text-transform: uppercase;
-        letter-spacing: 3px;
-        font-family: arame;
+        letter-spacing: 4px;
         opacity: 0.65;
-        font-size: 12px;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     .text {
         letter-spacing: 3px;
         text-transform: uppercase;
-        font-family: arame;
         font-size: 2.5vw;
+        line-height: 140%;
+        font-weight: 600;
         display: block;
         opacity: 0.5;
     }

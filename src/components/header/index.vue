@@ -112,7 +112,7 @@ export default {
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 4px;
-        opacity: 0.5;
+        opacity: 0.6;
         background-color: transparent;
         border: 0;
         cursor: pointer;

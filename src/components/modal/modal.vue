@@ -72,13 +72,13 @@ export default {
 
         &:after {
             top: 7px;
-            left: -33%;
+            left: -38%;
             transform: rotate(45deg);
         }
 
         &:before {
             top: 7px;
-            left: -33%;
+            left: -38%;
             transform: rotate(-45deg);
         }
 

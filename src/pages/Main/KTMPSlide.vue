@@ -131,6 +131,34 @@ export default {
       z-index: 2;
     }
 
+    .tabs-component-tab {
+      margin-right: 100px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        text-transform: uppercase;
+        opacity: 0.5;
+        font-weight: 600;
+        letter-spacing: 5px;
+        position: relative;
+        margin-right: 100px;
+
+        &.is-active {
+          opacity: 1;
+
+          &:after, &:before {
+            width: 50%;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
     .slideContainer {
       height: 100%;
     }
@@ -158,8 +186,7 @@ export default {
         border: 0;
         text-transform: uppercase;
         text-decoration: none;
-        font-family: arame;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 4px;
         color: #fff;
         margin-right: 60px;

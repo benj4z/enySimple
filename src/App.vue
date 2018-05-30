@@ -88,9 +88,9 @@ body {
 
 #fp-nav ul li .fp-tooltip {
     text-transform: uppercase;
-    font-family: arame;
     letter-spacing: 3px;
-    font-size: 6px;
+    font-size: 10px;
+    opacity: 0.6;
     left: 40px!important;
     top: 2px!important;
 }
@@ -142,35 +142,6 @@ body {
         justify-content: center;
         list-style: none;
         z-index: 2;
-    }
-
-    .tabs-component-tab {
-        margin-right: 100px;
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            text-transform: uppercase;
-            opacity: 0.5;
-            font-weight: 400;
-            font-family: arame;
-            letter-spacing: 5px;
-            position: relative;
-            margin-right: 100px;
-
-            &.is-active {
-              opacity: 1;
-
-              &:after, &:before {
-                width: 50%;
-              }
-            }
-
-            &:last-child {
-              margin-right: 0;
-            }
-        }
     }
 
     .tabs-component-panel {

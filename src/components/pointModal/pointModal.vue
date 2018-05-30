@@ -2,28 +2,30 @@
     <div class="point-container" v-if="content && Object.keys(content).length">
         <div class="background" :style="{backgroundImage: bg}"/>
         <vue-perfect-scrollbar v-once class="scroll-area">
-            <div class="separator" />
-            <div class="content">
-                 <div class="content-header">
-                    <h2 class="title">{{content.title}}</h2>
-                     <div class="play-link">
-                         <img src="src/assets/play.svg" alt="">
-                         <span>видео</span>
-                     </div>
-                 </div>
-                <div class="content-body">
-                    <div class="article" v-for="item in content.content">
-                      <h2 class="subtitle">{{item.title}}</h2>
-                      <p v-for="text in item.texts">
-                        {{text}}
-                      </p>
-                    </div>
-                    <!--<div class="more">
-                      <span class="moreTitle">{{content.more.title}}</span>
-                      <a :href="data.more.site" target="_blank">{{content.more.site}}</a>
-                    </div>-->
-                </div>
-            </div>
+          <div class="scroll-content">
+              <div class="separator" />
+              <div class="content">
+                   <div class="content-header">
+                      <h2 class="title">{{content.title}}</h2>
+                       <div class="play-link">
+                           <img src="src/assets/play.svg" alt="">
+                           <span>видео</span>
+                       </div>
+                   </div>
+                  <div class="content-body">
+                      <div class="article" v-for="item in content.content">
+                        <h2 class="subtitle">{{item.title}}</h2>
+                        <p v-for="text in item.texts">
+                          {{text}}
+                        </p>
+                      </div>
+                      <!--<div class="more">
+                        <span class="moreTitle">{{content.more.title}}</span>
+                        <a :href="data.more.site" target="_blank">{{content.more.site}}</a>
+                      </div>-->
+                  </div>
+              </div>
+          </div>
         </vue-perfect-scrollbar>
     </div>
 </template>
@@ -47,12 +49,16 @@ export default {
 
 <style lang="scss" scoped>
     .scroll-area {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 85%;
-        height: 80%;
+      position: absolute;
+      top: 50%;
+      left: 6%;
+      transform: translateY(-50%);
+      width: 92%;
+      height: 80%;
+    }
+
+    .scroll-content {
+      width: 97%;
     }
 
     .background {
@@ -78,6 +84,8 @@ export default {
         text-transform: uppercase;
         font-weight: 600;
         margin-bottom: 10px;
+        opacity: 0.6;
+        letter-spacing: 2px;
         cursor: pointer;
 
         img {
@@ -101,9 +109,10 @@ export default {
 
     .title {
         color: #fff;
-        width: 40%;
+        width: 55%;
+        font-weight: 400;
         font-family: arame;
-        font-size: 2vw;
+        font-size: 2.5vw;
         margin: 0;
     }
 

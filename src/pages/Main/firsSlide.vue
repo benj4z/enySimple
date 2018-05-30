@@ -54,7 +54,7 @@ export default {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 4.5vw;
+        font-size: 5vw;
         font-weight: 400;
         font-family: arame;
         margin: 0;
@@ -117,14 +117,18 @@ export default {
         transform-origin: top;
         font-weight: 600;
         position: absolute;
-        top: 42px;
+        top: 35px;
         left: -42px;
+        opacity: 0.6;
+        font-size: 10px;
     }
 
     .text {
         margin: 0;
         margin-left: 40px;
         line-height: 24px;
+        letter-spacing: 2px;
+        font-weight: 600;
     }
 
 </style>

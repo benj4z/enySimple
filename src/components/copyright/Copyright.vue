@@ -38,7 +38,6 @@ export default {
 <style lang="scss" scoped>
     .copyright {
         text-transform: uppercase;
-        font-family: arame;
         letter-spacing: 3px;
         transform: rotate(-90deg);
         position: absolute;
@@ -46,7 +45,7 @@ export default {
         left: 0;
         z-index: 2;
         color: #fff;
-        opacity: 0.5;
+        opacity: 0.6;
         font-size: 12px;
         transition: all .35s;
 

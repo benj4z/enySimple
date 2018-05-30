@@ -175,15 +175,15 @@ export default {
         width: 100%;
         text-align: right;
         font-family: arame;
-        font-size: 18vw;
+        font-size: 21vw;
         font-weight: 800;
     }
 
     .number-text {
         font-size: 24px;
         text-transform: uppercase;
-        letter-spacing: 4px;
+        letter-spacing: 6px;
         font-weight: 600;
-        opacity: 0.5;
+        opacity: 0.6;
     }
 </style>

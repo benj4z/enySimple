@@ -106,16 +106,17 @@ export default {
 
     .title {
         margin-top: 0;
-        font-size: 4.5vw;
+        font-size: 4.2vw;
         font-weight: 400;
         font-family: arame;
-        margin-bottom: 120px;
+        margin-bottom: 70px;
         transition: all .35s;
     }
 
     .text {
         letter-spacing: 3px;
         line-height: 20px;
+        width: 90%;
     }
 
     .input {
@@ -125,9 +126,9 @@ export default {
         margin-bottom: 55px;
         padding: 12px 10px;
         text-transform: uppercase;
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 600;
-        letter-spacing: 3px;
+        letter-spacing: 6px;
         outline: none;
         color: #fff;
     }
