@@ -108,4 +108,23 @@ export default {
         left: calc(3% + 45px);
       }
     }
+
+    @media (max-width: 1024px) {
+      .ctrlBtn {
+        &.down {
+          left: 2.9%;
+          top: calc(50% + 130px);
+        }
+        &.up {
+          top: calc(50% + 94px);
+          left: 2.9%;
+        }
+      }
+    }
+
+    @media (max-width: 469px) {
+      .ctrlBtn {
+        display: none;
+      }
+    }
 </style>

@@ -137,7 +137,7 @@
             </div>
         </div>
         <div class="bottom-controls">
-          <button class="play-link">
+          <button class="play-link" v-show="false">
             <img src="src/assets/play.svg" alt="play">
             <span>о комплексе</span>
           </button>
@@ -551,12 +551,26 @@ export default {
       }
     }
 
-    @media screen and (max-width: 1367px) {
+    @media (max-width: 1367px) {
 
       .content {
         height: 65%;
       }
 
+      .drag-img-container {
+        transform: scale(0.75);
+      }
 
+    }
+
+    @media (max-width: 1024px) {
+      .drag-img-container {
+        transform: scale(0.55);
+      }
+
+      .rightText {
+        width: 300px;
+        font-size: 12px;
+      }
     }
 </style>

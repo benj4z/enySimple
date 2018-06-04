@@ -186,4 +186,40 @@ export default {
         font-weight: 600;
         opacity: 0.6;
     }
+
+    @media (max-width: 769px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .text-block {
+        width: 100%;
+      }
+      .number-block {
+        width: 100%;
+      }
+
+      .title {
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media (max-width: 469px) {
+      .number-block {
+        margin-bottom: 0px;
+      }
+
+      .text {
+        line-height: 22px;
+      }
+
+      .number {
+        display: none;
+      }
+
+      .title {
+        font-size: 9vw;
+      }
+    }
 </style>

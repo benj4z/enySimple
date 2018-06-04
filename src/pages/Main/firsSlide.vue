@@ -131,4 +131,40 @@ export default {
         font-weight: 600;
     }
 
+    @media (max-width: 1024px) {
+      .about {
+        width: 325px;
+      }
+
+      .rotateTitle {
+        left: -10px;
+      }
+    }
+
+    @media (max-width: 769px) {
+      .title {
+        font-size: 8vw;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 469px) {
+      .content {
+        width: 75%;
+      }
+
+      .title {
+        font-size: 9vw;
+        top: 43%;
+      }
+
+      .text {
+        line-height: 22px;
+      }
+
+      .about {
+        width: 295px;
+      }
+    }
+
 </style>

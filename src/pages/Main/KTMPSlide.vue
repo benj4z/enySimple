@@ -197,4 +197,32 @@ export default {
         }
     }
 
+    @media (max-width: 1367px) {
+      .product-img {
+        width: 60%;
+      }
+    }
+
+    @media (max-width: 769px) {
+      .product-img {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 469px) {
+      .tabs-component-tab a {
+        margin-right: 30px;
+        font-size: 16px;
+      }
+
+      .bottom-controls {
+        width: 70%;
+        text-align: center;
+      }
+
+      .btnControls {
+        margin-right: 8px;
+      }
+    }
+
 </style>

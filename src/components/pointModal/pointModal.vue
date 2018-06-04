@@ -7,7 +7,7 @@
               <div class="content">
                    <div class="content-header">
                       <h2 class="title">{{content.title}}</h2>
-                       <div class="play-link">
+                       <div class="play-link" v-show="false">
                            <img src="src/assets/play.svg" alt="">
                            <span>видео</span>
                        </div>

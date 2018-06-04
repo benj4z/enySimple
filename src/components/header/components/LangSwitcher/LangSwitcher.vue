@@ -54,4 +54,20 @@ export default {
             opacity: 1;
         }
     }
+
+    @media (max-width: 469px) {
+      .linkItem {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .devider {
+        display: none;
+      }
+    }
 </style>

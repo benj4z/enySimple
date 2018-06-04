@@ -78,5 +78,27 @@ export default {
         opacity: 0.5;
     }
 
+    @media (max-width: 469px) {
+      .title {
+        font-size: 9vw;
+      }
+
+      .contacts {
+        flex-wrap: wrap;
+      }
+
+      .half {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
+      .subTitle {
+        font-size: 16px;
+      }
+
+      .text {
+        font-size: 5.5vw;
+      }
+    }
 
 </style>

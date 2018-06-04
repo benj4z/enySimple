@@ -146,4 +146,39 @@ export default {
             }
         }
     }
+
+    @media (max-width: 769px) {
+      header {
+        .headerItem {
+          width: 35%;
+
+          &:last-child {
+            width: 25%;
+          }
+        }
+      }
+
+      .phone {
+        p {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: 469px) {
+      header {
+        left: 2.12%;
+        right: 2.45%;
+        top: 1%;
+      }
+
+      .logo {
+        width: 60px;
+      }
+
+      header .headerItem:last-child {
+        width: 38%;
+      }
+
+    }
 </style>

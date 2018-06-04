@@ -83,4 +83,10 @@ export default {
         }
 
     }
+
+    @media (max-width: 469px) {
+      .close {
+        left: -25px;
+      }
+    }
 </style>

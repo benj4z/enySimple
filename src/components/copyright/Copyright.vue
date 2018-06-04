@@ -60,4 +60,25 @@ export default {
         }
 
     }
+
+    @media (max-width: 1367px) {
+      .copyright {
+        left: -10px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .copyright {
+        left: -2%;
+      }
+    }
+
+    @media (max-width: 469px) {
+      .copyright.onScreen {
+        transform: translateX(0%) rotate(0deg);
+        bottom: 2%;
+        left: auto;
+        right: 2%;
+      }
+    }
 </style>

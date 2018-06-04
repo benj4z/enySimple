@@ -60,6 +60,7 @@ body {
     font-family: monoline;
     font-size: 14px;
 }
+
 .fp-tableCell {
     position: relative;
     vertical-align: bottom;
@@ -238,6 +239,36 @@ body {
         position: relative;
         display: block;
         height: 100% !important;
+      }
+    }
+
+    @media (max-width: 1367px) {
+      body {
+        font-size: 13px;
+      }
+
+      #fp-nav ul li .fp-tooltip {
+        font-size: 8px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      #fp-nav ul li .fp-tooltip {
+        display: none;
+      }
+    }
+
+    @media (max-width: 469px) {
+      #fp-nav.left {
+        left: 1%!important;
+      }
+
+      body {
+        font-size: 12px;
+      }
+
+      .about .fp-slidesNav.bottom {
+        display: none;
       }
     }
 

@@ -153,4 +153,32 @@ export default {
         text-align: left;
         cursor: pointer;
     }
+
+    @media (max-width: 769px) {
+      .callback {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .text-block {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
+      .callbackForm {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 469px) {
+      .title {
+        font-size: 9vw;
+        margin-bottom: 45px;
+      }
+
+      .input {
+        margin-bottom: 30px;
+        font-size: 14px;
+      }
+    }
 </style>
