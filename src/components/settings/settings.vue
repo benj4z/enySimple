@@ -221,4 +221,42 @@ export default {
         letter-spacing: 4px;
         text-transform: uppercase;
     }
+
+    @media (max-width: 469px) {
+      .scroll-area {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 88%;
+        height: 80%;
+      }
+
+      .scroll-content {
+        width: 94%;
+      }
+
+      .tableRow {
+        padding: 20px;
+      }
+
+      .item div {
+        flex: 1;
+      }
+
+      .title {
+        color: #fff;
+        margin-left: 20px;
+        font-family: arame;
+        font-size: 6.5vw;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+
+      .tableRow .right {
+        text-align: right;
+      }
+    }
+
 </style>

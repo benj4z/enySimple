@@ -134,4 +134,33 @@ export default {
             letter-spacing: 1px;
         }
     }
+
+    @media (max-width: 469px) {
+      .scroll-area {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 88%;
+        height: 80%;
+      }
+
+      .scroll-content {
+        width: 94%;
+      }
+
+      .content-header {
+        padding: 0 20px 20px 20px;
+      }
+
+      .title {
+        width: 95%;
+        font-size: 6vw;
+      }
+
+      .content-body {
+        width: 100%;
+        padding: 20px;
+      }
+    }
 </style>

@@ -37,19 +37,6 @@
             <div class="drag-img-container">
               <button
                 type="button"
-                class="point p1"
-                data-point="p1"
-                @mouseover="showHighlight"
-                @mouseleave="hideHighlight"
-                @click="pointOpen"
-              >
-                <point />
-                <span class="point-text">
-                  Плазменная технологическая оснастка семейства Powermax, Maxpro 200, HyPerfomance HPR XPR.
-                </span>
-              </button>
-              <button
-                type="button"
                 class="point p2"
                 data-point="p2"
                 @mouseover="showHighlight"
@@ -107,15 +94,6 @@
                 <span class="point-text">
                   Рабочий стол вытяжной секционный с самоочищающимся фильтром.
                 </span>
-              </button>
-              <button
-                type="button"
-                class="point p7"
-                data-point="p7"
-                @mouseover="showHighlight"
-                @mouseleave="hideHighlight"
-                @click="pointOpen">
-                <point />
               </button>
               <img class="product-img" src="src/assets/source.png" alt="Енисей 2М">
               <img class="highlight" data-highlight="p1" src="src/assets/h1.png" />
@@ -572,5 +550,65 @@ export default {
         width: 300px;
         font-size: 12px;
       }
+    }
+
+    @media (max-width: 469px) {
+      .drag-img-container {
+        width: 80%;
+        transform: scale(0.95);
+        margin-top: 90px;
+      }
+
+      .drag-img-container img {
+        display: none!important;
+      }
+
+      .point {
+        position: static;
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+
+        svg {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .point-text {
+          display: inline-block;
+          position: static;
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+      }
+
+      .rightText {
+        display: none;
+      }
+
+      .close {
+        left: -4%;
+      }
+
+      .btnControls {
+        font-size: 16px;
+      }
+
+      .content {
+        top: 37%;
+      }
+
+      .titleBlock {
+        top: 30px;
+      }
+
+      .title {
+        font-size: 6vw;
+      }
+
+      .point-text {
+        font-size: 10px;
+      }
+
     }
 </style>
