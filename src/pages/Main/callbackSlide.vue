@@ -176,6 +176,14 @@ export default {
         margin-bottom: 45px;
       }
 
+      .slideContent {
+        padding: 5% 9%;
+      }
+
+      .content {
+        width: 85%;
+      }
+
       .input {
         margin-bottom: 30px;
         font-size: 14px;

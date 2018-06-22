@@ -261,6 +261,7 @@ body {
     @media (max-width: 469px) {
       #fp-nav.left {
         left: 1%!important;
+        display: none;
       }
 
       body {

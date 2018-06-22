@@ -162,6 +162,14 @@ export default {
         line-height: 22px;
       }
 
+      .slideContent {
+        padding: 5% 9%;
+      }
+
+      .content {
+        width: 85%;
+      }
+
       .about {
         width: 295px;
       }

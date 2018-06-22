@@ -214,12 +214,23 @@ export default {
         line-height: 22px;
       }
 
-      .number {
-        display: none;
-      }
-
       .title {
         font-size: 9vw;
+      }
+
+      .content {
+        width: 100%;
+        position: static;
+        transform: translate(0);
+      }
+
+      .slideContent {
+        padding: 5% 9%;
+      }
+
+      .big-number {
+        text-align: center;
+        font-size: 145px;
       }
     }
 </style>

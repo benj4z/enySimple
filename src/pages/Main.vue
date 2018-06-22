@@ -7,7 +7,7 @@
             <div class="section ktmp">
                 <k-t-m-p-slide />
             </div>
-            <div class="section about">
+            <div class="section fp-auto-height about">
                 <about-slide />
             </div>
             <div class="section">
@@ -41,6 +41,7 @@ export default {
         showActiveTooltip: true,
         slidesNavigation: true,
         controlArrows: false,
+        responsiveWidth: 500,
         afterLoad: () => {
           setTimeout(() => {
             $('.slideContent').removeClass('offScreen').addClass('onScreen');
@@ -60,8 +61,7 @@ export default {
       $.fn.fullpage.moveSectionUp();
     }
   },
-  beforeDestroy () {
-    console.log(1);
+  beforeDestroy() {
     $.fn.fullpage.destroy('all');
   },
   components: {

@@ -216,12 +216,24 @@ export default {
       }
 
       .bottom-controls {
-        width: 70%;
+        width: 95%;
         text-align: center;
       }
 
       .btnControls {
         margin-right: 8px;
+      }
+
+      .slideContent {
+        min-height: 100vh;
+      }
+
+      .slideContent {
+        padding: 5% 9%;
+      }
+
+      .content {
+        width: 85%;
       }
     }
 
