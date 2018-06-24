@@ -76,7 +76,7 @@ export default {
     @media (max-width: 469px) {
       .copyright.onScreen {
         transform: translateX(0%) rotate(0deg);
-        bottom: 2%;
+        bottom: 15px;
         left: auto;
         right: 2%;
       }

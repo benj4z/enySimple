@@ -169,7 +169,7 @@ export default {
       header {
         left: 2.12%;
         right: 2.45%;
-        top: 1%;
+        top: 10px;
       }
 
       .logo {

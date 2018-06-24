@@ -88,5 +88,9 @@ export default {
       .close {
         left: -25px;
       }
+
+      .modalContainer {
+        height: 100vh;
+      }
     }
 </style>

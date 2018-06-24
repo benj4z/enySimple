@@ -553,6 +553,10 @@ export default {
     }
 
     @media (max-width: 469px) {
+      .container {
+        min-height: 100vh;
+      }
+
       .drag-img-container {
         width: 80%;
         transform: scale(0.95);

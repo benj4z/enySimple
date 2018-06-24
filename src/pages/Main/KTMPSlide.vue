@@ -235,6 +235,10 @@ export default {
       .content {
         width: 85%;
       }
+
+      .product-img {
+        width: 105%;
+      }
     }
 
 </style>

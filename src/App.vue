@@ -271,6 +271,12 @@ body {
       .about .fp-slidesNav.bottom {
         display: none;
       }
+
+      #app {
+        min-height: 100vh;
+        height: auto;
+        overflow: hidden;
+      }
     }
 
 </style>

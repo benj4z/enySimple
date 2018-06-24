@@ -7,7 +7,7 @@
             <div class="section ktmp">
                 <k-t-m-p-slide />
             </div>
-            <div class="section fp-auto-height about">
+            <div class="section about">
                 <about-slide />
             </div>
             <div class="section">
@@ -125,6 +125,10 @@ export default {
     @media (max-width: 469px) {
       .ctrlBtn {
         display: none;
+      }
+
+      .about {
+        height: auto!important;
       }
     }
 </style>
