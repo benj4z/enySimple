@@ -122,6 +122,8 @@ export default {
     .input {
         background-color: transparent;
         border: 0;
+        border-radius: 0;
+        outline: 0;
         border-bottom: 1px solid #fff;
         margin-bottom: 55px;
         padding: 12px 10px;
@@ -187,6 +189,10 @@ export default {
       .input {
         margin-bottom: 30px;
         font-size: 14px;
+      }
+
+      .text-block {
+        margin-bottom: 25px;
       }
     }
 </style>

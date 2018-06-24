@@ -225,7 +225,7 @@ export default {
       }
 
       .slideContent {
-        min-height: 100vh;
+        height: 100vh;
       }
 
       .slideContent {
@@ -234,6 +234,7 @@ export default {
 
       .content {
         width: 85%;
+        height: 80%;
       }
 
       .product-img {
