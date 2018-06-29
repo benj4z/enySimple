@@ -461,8 +461,8 @@ export default {
         }
 
         &.p3 {
-            top: 10%;
-            left: 850px;
+            top: 35%;
+            left: 382px;
         }
 
         &.p4 {

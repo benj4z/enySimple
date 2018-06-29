@@ -1,6 +1,6 @@
 <template>
     <div class="point-container" v-if="content && Object.keys(content).length">
-        <div class="background" :style="{backgroundImage: bg}"/>
+        <div class="background" :style="{backgroundImage: content.bg}"/>
         <vue-perfect-scrollbar v-once class="scroll-area">
           <div class="scroll-content">
               <div class="separator" />
