@@ -160,6 +160,7 @@ export default {
 
       .text {
         line-height: 22px;
+        font-weight: 400;
       }
 
       .slideContent {

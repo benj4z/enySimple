@@ -7,10 +7,12 @@
     v-on:before-enter="beforeAnimate"
     v-on:leave="leaveAnimate" >
       <div class="slideContent offScreen">
+          <modal v-show="videoShow" @close="close">
+            <video-modal />
+          </modal>
           <div class="content">
             <div class="topControls tabs-component-tab">
-              <a href="#" class="anim-link is-active" data-anchor="slide1" @click.prevent="moveLeft">Енисей 2М</a>
-              <a href="#" class="anim-link" data-anchor="slide2" @click.prevent="moveRight">Енисей 3D</a>
+              <a href="#" class="anim-link is-active" data-anchor="slide1" @click.prevent="moveLeft">Енисей 3D</a>
             </div>
             <div class="slideContainer">
               <div class="slide" data-anchor="slide1">
@@ -19,11 +21,10 @@
                   <router-link to="/complexes/eni2m" class="btnControls anim-link">
                     подробнее
                   </router-link>
-                  <button class="btnControls anim-link">Видео</button>
-                  <button class="btnControls anim-link">Фото</button>
+                  <button class="btnControls anim-link" @click="showVideo">Видео</button>
                 </div>
               </div>
-              <div class="slide" data-anchor="slide2">
+              <div class="slide" data-anchor="slide2" v-show="false">
                 <img class="product-img" src="src/assets/Eni3D.png" alt="Енисей 2М">
                 <div class="bottom-controls">
                   <router-link to="/complexes/eni3d" class="btnControls anim-link">
@@ -40,6 +41,9 @@
 </template>
 
 <script>
+import Modal from '../../components/modal/modal.vue';
+import VideoModal from '../../components/modalVideo/modalVideo.vue';
+
 export default {
   name: 'k-t-m-p-slide',
   data() {
@@ -47,9 +51,22 @@ export default {
       options: {
         useUrlFragment: false,
       },
+      videoShow: false,
     };
   },
+  components: {
+    Modal,
+    VideoModal,
+  },
   methods: {
+    close() {
+      this.videoShow = false;
+      $('header').fadeIn();
+      $('.copyright').fadeIn();
+      $('#fp-nav').fadeIn();
+      $('.ctrlBtn').fadeIn();
+    },
+
     startAnimate(el, done) {
       setTimeout(() => {
         $(this.$el).toggleClass('onScreen offScreen');
@@ -79,7 +96,15 @@ export default {
       $.fn.fullpage.moveSlideRight();
       $('.topControls a').removeClass('is-active');
       $('.topControls a').last().addClass('is-active');
-    }
+    },
+
+    showVideo() {
+      this.videoShow = true;
+      $('header').fadeOut();
+      $('.copyright').fadeOut();
+      $('#fp-nav').fadeOut();
+      $('.ctrlBtn').fadeOut();
+    },
   }
 };
 </script>
@@ -218,6 +243,7 @@ export default {
       .bottom-controls {
         width: 95%;
         text-align: center;
+        bottom: 50px;
       }
 
       .btnControls {

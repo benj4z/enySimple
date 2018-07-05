@@ -242,6 +242,10 @@ body {
       }
     }
 
+    .about .fp-slidesNav.bottom {
+        display: none;
+    }
+    
     @media (max-width: 1367px) {
       body {
         font-size: 13px;

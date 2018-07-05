@@ -14,7 +14,7 @@
                     <p class="text">{{about2}}</p>
                 </div>
             </div>
-            <div class="number-block">
+            <div class="number-block" v-show="false">
                 <div class="slide">
                     <div class="number">
                         <div class="big-number">54</div>
@@ -120,11 +120,12 @@ export default {
     }
 
     .text-block {
-        width: 45%;
+        width: 85%;
         margin-right: 20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        margin-bottom: 10%;
     }
 
     .title {

@@ -567,11 +567,15 @@ export default {
         display: none!important;
       }
 
+      #point {
+        width: 35px;
+      }
+      
       .point {
         position: static;
         display: block;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
         svg {
           display: inline-block;
@@ -579,7 +583,7 @@ export default {
         }
 
         .point-text {
-          display: inline-block;
+          display: inline-block !important;
           position: static;
           vertical-align: middle;
           margin-left: 10px;
@@ -612,6 +616,10 @@ export default {
 
       .point-text {
         font-size: 10px;
+      }
+
+      .bottom-controls {
+        bottom: 8.5%;
       }
 
     }
