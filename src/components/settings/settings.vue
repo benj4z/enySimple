@@ -13,22 +13,22 @@
                 </div>
                 <div class="tableRow">
                     <div class="item">
-                        <div class="left">Класс вырезаемых деталей по ГОСТ14792-80</div>
-                        <div class="right">П1110</div>
+                        <div class="left">Класс точности вырезаемых деталей по ГОСТ14792-80</div>
+                        <div class="right">П1110/К2220</div>
                     </div>
                 </div>
                 <div class="tableRow">
                     <div class="item">
-                        <div class="left">Класс точности машины по ГОСТ5614-74</div>
-                        <div class="right">К1120</div>
+                        <div class="left">Показатели  назначения  на машину   класс точности   1, соответствует</div>
+                        <div class="right">ГОСТ5614-74.</div>
                     </div>
                 </div>
                 <div class="tableRow">
                     <div class="item">
                         <div class="left">
-                            Точность воспроизведения заданного контура при контрольном прочерчивании
+                            Точность вычерчивания контура
                         </div>
-                        <div class="right">1мм</div>
+                        <div class="right">±0,15мм</div>
                     </div>
                     <div class="item">
                         <div class="left">Отклонение размеров вычерченного контура</div>
@@ -37,23 +37,23 @@
                 </div>
                 <div class="tableRow">
                     <div class="item">
-                        <div class="left">Размеры зоны обработк:</div>
+                        <div class="left">Максимальные размеры раскраиваемого листа:</div>
                     </div>
                     <div class="item">
                         <div class="left">Длина</div>
-                        <div class="right">10 000мм</div>
+                        <div class="right">3000,6000</div>
                     </div>
                     <div class="item">
                         <div class="left">Ширина</div>
-                        <div class="right">6 000мм</div>
+                        <div class="right">1500,2000</div>
                     </div>
                 </div>
                 <div class="tableRow">
                     <div class="item">
                         <div class="left">
-                            Диапазон толщин разрезаемых металлов при плазменной резке (с края)
+                            Диапазон толщин разрезаемых металлов при плазменной резке, мм.
                         </div>
-                        <div class="right">40(80)мм</div>
+                        <div class="right">в зависимости от выбранного источника</div>
                     </div>
                 </div>
                 <div class="tableRow">
@@ -67,9 +67,9 @@
                 <div class="tableRow">
                     <div class="item">
                         <div class="left">
-                            Диапазон регулирования скорости перемещения инструмента
+                            Диапазон рабочих скоростей перемещения резаков, мм/мин
                         </div>
-                        <div class="right">50-18 000мм/мин</div>
+                        <div class="right">50 ÷ 20000</div>
                     </div>
                 </div>
                 <div class="tableRow">
@@ -77,15 +77,15 @@
                         <div class="left">
                             Наибольшая (маршевая) скорость перемещения инструмента
                         </div>
-                        <div class="right">18 000мм/мин</div>
+                        <div class="right">20 000мм/мин</div>
                     </div>
                 </div>
                 <div class="tableRow">
                     <div class="item">
                         <div class="left">
-                            Величина вертикального перемещения инструмента, не менее
+                            Величина вертикального перемещения резаков, мм
                         </div>
-                        <div class="right">250мм</div>
+                        <div class="right">250</div>
                     </div>
                 </div>
                 <div class="tableRow">

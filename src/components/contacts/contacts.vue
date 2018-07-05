@@ -8,8 +8,8 @@
             </div>
             <div class="half">
                 <h3 class="subTitle">Телефон/факс</h3>
-                <a class="text">{{contacts.phone}}</a>
-                <a class="text">{{contacts.addPhone}}</a>
+                <a class="text" href="tel:+7 (391) 219 33 33">{{contacts.phone}}</a>
+                <a class="text" href="tel:+7 (391) 219 24 44">{{contacts.addPhone}}</a>
             </div>
         </div>
     </div>
@@ -22,8 +22,8 @@ export default {
     return {
       contacts: {
         address: 'Россия, 660020, г. Красноярск, Северное шоссе, 16а',
-        phone: '+7 (391) 275-00-80',
-        addPhone: '+7 (391) 266-28-47',
+        phone: '+7 (391) 219 33 33',
+        addPhone: '+7 (391) 219 24 44',
       },
     };
   },
@@ -76,6 +76,7 @@ export default {
         font-weight: 600;
         display: block;
         opacity: 0.5;
+        color: #fff;
     }
 
     @media (max-width: 469px) {

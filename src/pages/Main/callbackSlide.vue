@@ -7,8 +7,8 @@
                     <p class="text">Уважаемые клиенты! <br> {{text}}</p>
                 </div>
                 <form class="callbackForm">
-                    <input type="text" class="input" placeholder="Имя">
-                    <input type="text" class="input" placeholder="Телефон/эл.почта">
+                    <input type="text" class="input" placeholder="Имя" required>
+                    <input type="text" class="input" placeholder="Телефон/эл.почта" required>
                     <a href="#" class="anim-link"><input type="submit" class="submit"></a>
                 </form>
             </div>

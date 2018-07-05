@@ -113,7 +113,7 @@ export default {
 
     .slideContent {
         background-color: #000;
-        background-image: url(./ktmpBg.png);
+        background-image: url(./circle.png), url(./3d.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
