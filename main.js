@@ -8,7 +8,6 @@ import router from './router';
 Vue.component('tabs', Tabs);
 Vue.component('tab', Tab);
 Vue.config.productionTip = false;
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
